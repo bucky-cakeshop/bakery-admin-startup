@@ -11,7 +11,7 @@ for ($i=0; $i -lt $files.Count; $i++) {
     $outfile = $files[$i].FullName
 	Set-Location $outfile 
 	if (Test-Path -Path $gitFolder) {
-		"Git Repository"
+		write-host "Git Repository" -BackgroundColor DarkGreen
 		git add .
 		git commit -m $comment
 		git push
