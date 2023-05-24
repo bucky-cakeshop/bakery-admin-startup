@@ -16,3 +16,4 @@ Write-Host "Wite while server is loading"
 Read-Host -Prompt "Press any key to continue..."
 
 Set-Location $CurrentDirectory
+Get-Job
