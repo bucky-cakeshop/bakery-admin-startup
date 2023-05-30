@@ -4,6 +4,7 @@
 Set-Location c:\Code\bucky-cakeshop\bakery-admin-backend\
 git pull
 python manage.py migrate
+pip install -r .\requirements.txt
 Start-Job -ScriptBlock {python manage.py runserver} -Name $beServerJobName
 
 # Absolute path to frontend repository
